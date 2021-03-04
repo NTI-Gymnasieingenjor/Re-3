@@ -1,4 +1,4 @@
-# Slinga
+# Re^3
 
 ## Definition of Done
 - The code follows the coding conventions.
