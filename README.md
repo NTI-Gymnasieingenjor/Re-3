@@ -35,4 +35,4 @@
 
 This website uses the "[Creative](https://startbootstrap.com/theme/creative)" template distributed by Start Bootstrap LLC. under the MIT license.
 
-Background photo by Karsten Würth on Unsplash.
+Background photo by [Karsten Würth](https://unsplash.com/@karsten_wuerth) on [Unsplash](https://unsplash.com/).
