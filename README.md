@@ -1,4 +1,4 @@
-# Re^3
+# ReCubed
 
 ## Definition of Done
 - The code follows the coding conventions.
