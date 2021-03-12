@@ -10169,3 +10169,8 @@ header.masthead h1 {
 .contact-link {
   width: max-content;
 }
+
+.image-text{
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
