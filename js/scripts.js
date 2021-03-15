@@ -7,36 +7,23 @@
     "use strict"; // Start of use strict
   
       // Smooth scrolling using jQuery easing
-      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                // Modified scroll offset to ease when scrolling to bottom or top item
-                let offset = target.offset().top - 100;
-                if (offset < 0) offset = 0;
-                if (target[0].offsetTop + target[0].clientHeight >= document.body.clientHeight) {
-                    let min = target[0].offsetTop - window.innerHeight + target[0].clientHeight;
-                    if (offset > min) {
-                        offset = min;
-                    }
-                }
-                $("html, body").animate(
-                    {
-                        scrollTop: offset,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
+   // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (window.innerWidth < 992) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 100)
+          }, 1000, "easeInOutExpo");
         }
+        else {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 135)
+          }, 1000, "easeInOutExpo");
+        }
+          return false;
+      }
     });
   
     // Closes responsive menu when a scroll trigger link is clicked
@@ -45,10 +32,18 @@
     });
   
     // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-      target: '#mainNav',
-      offset: 130
-    });
+    if (window.innerWidth < 992) {
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 101
+      });
+    }
+    else {
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 136
+      });
+    }
   
     // Collapse Navbar
     var navbarCollapse = function() {
