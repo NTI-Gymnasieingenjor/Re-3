@@ -1,5 +1,8 @@
 # ReCubed
 
+[Website](https://nti-gymnasieingenjor.github.io/ReCubed/) <br>
+[Documentation](https://github.com/NTI-Gymnasieingenjor/ReCubed/blob/main/Documentation.md)
+
 ## Definition of Done
 - The code follows the coding conventions.
 - Confirm with the group before commiting to main. 
