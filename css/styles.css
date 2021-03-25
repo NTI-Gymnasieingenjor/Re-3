@@ -2661,6 +2661,11 @@ fieldset:disabled a.btn {
   background-color: #5E8B76  ;
   border-color: #5E8B76  ;
 }
+.btn-light:not(:disabled):not(.disabled):active:hover, .btn-light:not(:disabled):not(.disabled).active:hover, .show > .btn-light.dropdown-toggle:hover {
+  color: #fff;
+  background-color: #77a590 ;
+  border-color: #77a590 ;
+}
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(94, 139, 118, 0.5);
 }
@@ -10186,3 +10191,21 @@ header.masthead h1 {
   }
 }
 
+/* Style of the button that opens and collapses the team info panel*/
+.collapsible {
+  cursor: pointer;
+}
+
+/* Style of the team info panel*/
+.content {
+  background-color: #DDE7D3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+
+/* Box shadow on the team members' images*/
+.image-shadow {
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 15%);
+}
