@@ -21,6 +21,7 @@
   --navbar_hover:#E3CE9F  ;
   --button_press_border: (94, 139, 118);
   --button_light_hover: #77a590;
+  --background_white: #fcfcff;
   
 
   --rgb: rgb(34,40,118);
@@ -6156,7 +6157,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f6f6f6 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -6177,6 +6178,10 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-background-white {
+  background-color: #fcfcff;
 }
 
 .bg-transparent {
