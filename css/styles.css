@@ -10181,7 +10181,14 @@ header.masthead h1 {
 }
 
 .image-text{
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bolder !important;
+  color: #1C190B;
+}
+
+.earth-text{
+  font-size: 60px;
+  color: #1C190B;
   font-family: 'Bebas Neue', cursive;
 }
 
