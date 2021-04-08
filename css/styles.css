@@ -10181,14 +10181,24 @@ header.masthead h1 {
 }
 
 .image-text{
-  font-size: 30px;
-  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #1C190B;
 }
 
 @media (max-width: 600px) {
   .image-text {
     font-size: 25px;
   }
+}
+
+.body-text {
+  color: #1C190B;
+}
+
+.slogan-bold {
+  font-family: 'Playfair Display', serif;
+  color:#d3ddc9;
+  font-weight: bold;
 }
 
 /* Style of the button that opens and collapses the team info panel*/
