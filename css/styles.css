@@ -10198,6 +10198,12 @@ header.masthead h1 {
   }
 }
 
+.slogan-bold {
+  font-family: 'Playfair Display', serif;
+  color:#d3ddc9;
+  font-weight: bold;
+}
+
 /* Style of the button that opens and collapses the team info panel*/
 .collapsible {
   cursor: pointer;
