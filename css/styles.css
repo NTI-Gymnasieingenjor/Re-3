@@ -6296,6 +6296,10 @@ button.bg-dark:focus {
   border-radius: 0.3rem !important;
 }
 
+.rounded-mg {
+  border-radius: 20px !important;
+}
+
 .rounded-circle {
   border-radius: 50% !important;
 }
@@ -10219,3 +10223,5 @@ header.masthead h1 {
 .image-shadow {
   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 15%);
 }
+
+
