@@ -6272,6 +6272,10 @@ button.bg-dark:focus {
   border-radius: 0.25rem !important;
 }
 
+.rounded-mg {
+  border-radius: 20px !important;
+}
+
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
   border-top-right-radius: 0.25rem !important;
@@ -9722,6 +9726,10 @@ button.bg-dark:focus {
   .text-sm-center {
     text-align: center !important;
   }
+
+  .text-sm-justify {
+    text-align: justify !important;
+  }
 }
 @media (min-width: 768px) {
   .text-md-left {
@@ -9734,6 +9742,10 @@ button.bg-dark:focus {
 
   .text-md-center {
     text-align: center !important;
+  }
+
+  .text-md-justify {
+    text-align: justify !important;
   }
 }
 @media (min-width: 992px) {
@@ -9748,6 +9760,10 @@ button.bg-dark:focus {
   .text-lg-center {
     text-align: center !important;
   }
+
+  .text-lg-justify {
+    text-align: justify !important;
+  }
 }
 @media (min-width: 1200px) {
   .text-xl-left {
@@ -9760,6 +9776,10 @@ button.bg-dark:focus {
 
   .text-xl-center {
     text-align: center !important;
+  }
+
+  .text-xl-justify {
+    text-align: justify !important;
   }
 }
 .text-lowercase {
@@ -9800,6 +9820,10 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
+}
+
+.new-text-tone{
+  color: #497358  ;
 }
 
 .new-text-color {
@@ -10182,7 +10206,8 @@ header.masthead h1 {
 
 .image-text{
   font-size: 25px;
-  font-weight: bolder !important;
+  line-height: 35px;
+  font-weight: lighter !important;
   color: #1C190B;
 }
 
@@ -10222,3 +10247,12 @@ header.masthead h1 {
 .image-shadow {
   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 15%);
 }
+
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {overflow: hidden; position: relative; width: 100%; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/bg-masthead.png"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {overflow: hidden; position: relative; width: 100%; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(0, 0, 0, 0) 100%), url("../assets/img/bg-section.jpg"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+
