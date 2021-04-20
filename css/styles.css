@@ -10127,11 +10127,6 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/bg-masthead.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 header.masthead h1 {
   font-size: 2.25rem;
@@ -10239,5 +10234,3 @@ header.masthead h1 {
 .image-shadow {
   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 15%);
 }
-
-
