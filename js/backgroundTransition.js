@@ -17,9 +17,7 @@
             classNameBottomImage: "image-bottom",
             classNameTopImage: "image-top",
             idNameDownloadImage: "image-download",
-            backgrounds: [ 
-            { src :'../assets/img/bg-masthead.png' },
-            { src: '../assets/img/bg-masthead2.jpg' } 
+            backgrounds: [
             ],
             imageKey: 1,
             transitionDelay: 5,
@@ -84,8 +82,8 @@
 
 $('.backgroundTransition').backgroundTransition({
     backgrounds:[
-      { src: '../assets/img/bg-masthead.png' },
-      { src: '../assets/img/bg-masthead2.jpg' },
+      { src: 'assets/img/bg-masthead.png' },
+      { src: 'assets/img/bg-masthead2.jpg' },
     ],
     transitionDelay: 5,
     animationSpeed: 1500
