@@ -10127,7 +10127,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/bg-masthead.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%), url("../assets/img/bg-masthead.png");
   background-position: center;
   background-size: cover;
   background-attachment: scroll;

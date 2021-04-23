@@ -39,7 +39,7 @@
         },
 
         prepareMarkup: function() {
-            var imageBottom = $("<div/>").addClass(this.config.classNameBottomImage + ' initial').css('background-image',  ['linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%)', 'url(' + this.config.backgrounds[0].src + ')']);
+            var imageBottom = $("<div/>").addClass(this.config.classNameBottomImage + ' initial').css('background-image',  ['linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%)', 'url(' + this.config.backgrounds[0].src + ')']);
             var imageTop = $("<div/>").addClass(this.config.classNameTopImage).css('display', 'none');
             $(this.elem)
                 .prepend(imageBottom, imageTop)
@@ -62,9 +62,9 @@
         replaceImage: function() {
             var nextSrc = $('#' + self.config.idNameDownloadImage);
             $('#' + self.config.idNameDownloadImage).remove();
-            $('.' + self.config.classNameTopImage).css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%)', 'url(' + nextSrc.attr('src') + ')']);
+            $('.' + self.config.classNameTopImage).css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%)', 'url(' + nextSrc.attr('src') + ')']);
             $('.' + self.config.classNameTopImage).fadeIn(self.config.animationSpeed, 'swing', function() {
-               $('.' + self.config.classNameBottomImage).css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%)', 'url(' + nextSrc.attr('src') + ')']);
+               $('.' + self.config.classNameBottomImage).css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%)', 'url(' + nextSrc.attr('src') + ')']);
                $(this).hide();
                self.config.imageKey++;
                self.loadNext();
