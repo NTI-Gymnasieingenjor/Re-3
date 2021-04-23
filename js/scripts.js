@@ -91,28 +91,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-// Slideshow
-$(function () {
-    var header = $('header');
-    var backgrounds = [
-      'url(../assets/img/bg-masthead.png)',
-      'url(../assets/img/bg-masthead2.jpg)'];
-    var current = 0;
-
-    function nextBackground() {
-        header.css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%)', backgrounds[current = ++current % backgrounds.length]]),
-        header.css('background-repeat', 'no-repeat'),
-        header.css('background-size', 'cover'),
-        header.css('background-position', 'center'),
-        header.css('background-attachment', 'scroll');
-
-        setTimeout(nextBackground, 5000);
-    }
-    setTimeout(nextBackground, 5000);
-    header.css('background-image', ['linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 100%)', backgrounds[0]]),
-    header.css('background-repeat', 'no-repeat'),
-    header.css('background-size', 'cover'),
-    header.css('background-position', 'center'),
-    header.css('background-attachment', 'scroll');
-});

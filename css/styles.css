@@ -10127,6 +10127,11 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/bg-masthead.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 header.masthead h1 {
   font-size: 2.25rem;
@@ -10234,3 +10239,39 @@ header.masthead h1 {
 .image-shadow {
   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 15%);
 }
+
+/* Slideshow */
+html, body, .backgroundTransition, .backgroundTransition .image-top, .backgroundTransition .image-bottom {
+  height: 100%;
+  width: 100%;
+}
+
+body { margin: 0; }
+
+body .backgroundTransition {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .backgroundTransition .image-bottom, body .backgroundTransition .image-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .backgroundTransition .image-bottom { z-index: -2; }
+
+body .backgroundTransition .image-top {
+  z-index: -1;
+  display: none;
+}
+
+#image-download { display: none; }
