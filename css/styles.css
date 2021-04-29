@@ -10224,6 +10224,15 @@ header.masthead h1 {
 }
 
 @media (max-width: 600px) {
+  .content-text{
+    font-size: 22px;
+    color: #1C190B;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
   .image-text {
     font-size: 25px;
   }
