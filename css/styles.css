@@ -2670,6 +2670,41 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(94, 139, 118, 0.5);
 }
 
+.btn-footer {
+  color: #5E8B76;
+  background-color: #DDE7D3  ;
+  border-color: #DDE7D3  ;
+}
+.btn-footer:hover {
+  color: #fff;
+  background-color: #E3CE9F ;
+  border-color: #E3CE9F ;
+}
+.btn-footer:focus, .btn-footer.focus {
+  color: #fff;
+  background-color: #DDE7D3  ;
+  border-color: #DDE7D3  ;
+  box-shadow: 0 0 0 0.2rem rgba(94, 139, 118, 0.5);
+}
+.btn-footer.disabled, .btn-footer:disabled {
+  color: #fff;
+  background-color: #DDE7D3  ;
+  border-color: #DDE7D3  ;
+}
+.btn-footer:not(:disabled):not(.disabled):active, .btn-footer:not(:disabled):not(.disabled).active, .show > .btn-footer.dropdown-toggle {
+  color: #5E8B76;
+  background-color: #DDE7D3  ;
+  border-color: #DDE7D3  ;
+}
+.btn-footer:not(:disabled):not(.disabled):active:hover, .btn-footer:not(:disabled):not(.disabled).active:hover, .show > .btn-footer.dropdown-toggle:hover {
+  color: #fff;
+  background-color: #E3CE9F ;
+  border-color: #E3CE9F ;
+}
+.btn-footer:not(:disabled):not(.disabled):active:focus, .btn-footer:not(:disabled):not(.disabled).active:focus, .show > .btn-footer.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(94, 139, 118, 0.5);
+}
+
 .btn-dark {
   color: #fff;
   background-color: #343a40;
@@ -6104,6 +6139,10 @@ a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #ee3e0d !important;
+}
+
+.bg-footer {
+  background-color: #5E8B76  !important;
 }
 
 .bg-secondary {
@@ -9823,7 +9862,23 @@ button.bg-dark:focus {
 }
 
 .new-text-color {
-  color: #5E8B76  ;
+  color: #5E8B76;
+}
+
+.footer-item-color {
+  color: #DDE7D3;
+}
+
+.footer-link {
+  color: #DDE7D3;
+}
+
+.footer-link:hover {
+  color: #DDE7D3 !important;
+}
+
+.new-text-tone {
+  color: #497358;
 }
 
 .text-primary {
@@ -9896,6 +9951,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-muted {
   color: #6c757d !important;
+  font-size: 18px;
+}
+
+.our-team-text {
+  color: rgb(224, 226, 220) !important;
 }
 
 .text-black-50 {
@@ -10201,8 +10261,26 @@ header.masthead h1 {
 }
 
 .image-text{
-  font-size: 50px;
+  font-size: 45px;
   color: #1C190B;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+.content-text{
+  font-size: 30px;
+  color: #1C190B;
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .content-text{
+    font-size: 22px;
+    color: #1C190B;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 
 @media (max-width: 600px) {
@@ -10228,7 +10306,7 @@ header.masthead h1 {
 
 /* Style of the team info panel*/
 .content {
-  background-color: #DDE7D3;
+  background-color: #5E8B76;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
